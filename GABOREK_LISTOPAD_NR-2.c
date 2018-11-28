@@ -23,33 +23,30 @@
 
 
 
-#include "GABOREK_LISTOPAD_NR-2.h"
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
+/*************************************************************************************************
+ Teraz wykonuje zadanie 2.1. Użyłem komentarz blokowy
+ *************************************************************************************************/
+
+
 int main (void)
 {
-    int i, s=0, n=10;
+    float Liczba1, Liczba2;
+    char operator;
+    float wynik1;
+    float wynik2;
+    float wynik3;
+    float wynik4;
     
-    float Liczba1, Liczba2; // Przypisuje typ zmiennej                                 (punkt 1.6)
-    char operator; // Przypisuje typ zmiennej                                          (punkt 1.6)
-    float wynik1; // Przypisuje typ zmiennej                                           (punkt 1.6)
-    float wynik2; // Przypisuje typ zmiennej                                           (punkt 1.6)
-    float wynik3; // Przypisuje typ zmiennej                                           (punkt 1.6)
-    float wynik4; // Przypisuje typ zmiennej                                           (punkt 1.6)
+    int zmienna, cyfra1, cyfra2, wynik, wyjscie=0;
+    char kontynuj;
     
-/*************************************************************************************************
-                    Tearaz wykonuje zadanie 2.1. Użyłem komentarz blokowy
-*************************************************************************************************/
-   
     
-    printf ("Wprowadz liczbe aby ja wyswietlic\n");
-    printf ("Wprzypadku wprowadzenia liczby ''0'' program zakonczy dzialanie\n");
-    scanf ("%i", i);
-    for (i=0; i<n ; i=i +1)
-        s=s+2;
-        printf ("Suma liczb calkowitych: %d", s);
-
+    while(wyjscie == 0) {
         printf ("Podaj liczbe, operator i znowu liczbe\n");
         printf ("Po wprowadzeniu każdego znaku użyj klawisza ''ENTER''\n");
         scanf ("%f %c %f", &Liczba1, &operator, &Liczba2);
@@ -75,8 +72,26 @@ int main (void)
                 break;
         }
         puts ("Gratulacje !!! Wlasnie dotarles do konca zadania nr 1 - listopad");
+        while(1)
+        {
+            printf("\nCzy chcesz wykonac kolejne obliczenie? (t/n): ");
+            getchar();
+            scanf("%c", &kontynuj);
+            if(kontynuj == 't')
+            {
+                break;
+            }
+            else if(kontynuj == 'n')
+            {
+                wyjscie = 1;
+                break;
+            }
+            else
+            {
+                printf("Podales bledna litere!\n");
+            }
+        }
     }
-    return EXIT_SUCCESS ;
+    return 0;
 }
-
 
