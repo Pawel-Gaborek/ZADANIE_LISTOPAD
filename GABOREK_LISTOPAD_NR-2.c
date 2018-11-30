@@ -165,6 +165,7 @@ Zadanie nr 2.2 (punkt 2.2)
                 printf("Podales bledna litere!\n");
             }
         }
+        printf ("\nZakonczyles program nr 2.2 (punkt 2.2)\n");
     }
 
     
