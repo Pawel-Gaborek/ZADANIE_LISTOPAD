@@ -66,6 +66,8 @@ int main (void)
      Zmienne dla zadania nr 2.4 (punkt 2.4)
      *************************************************************************************************/
     
+    int mm2;
+    int aa2 = 1;
     
     /*************************************************************************************************
      Zmienne dla zadania nr 2.5 (punkt 2.5)
@@ -200,6 +202,26 @@ Zadanie nr 2.3 (punkt 2.3)
  Zadanie nr 2.4 (punkt 2.4)
  *************************************************************************************************/
 
+    printf ("\nZadanie nr 2.4 (punkt 2.4)\n");
+    printf ("\nWprowadz liczbe celem porownania wzgledem zera\n");
+    printf ("\nPAMIETAJ !!!\n");
+    printf ("\nJezeli podana liczba jest mniejsza od zera to program zakonczy dzialanie\n");
+    scanf("\n%i", &mm2);
+    if (mm2 > 0)
+    {
+        while (aa2 <= mm2)
+        {
+            printf ("%i\n", aa2-1);
+            ++aa2;
+        }
+    }
+    else
+    {
+        printf ("Niestety podales liczbe: %i\n", mm2);
+        printf ("\nKtora nie jest wieksza od zera\n");
+        printf ("\nZakonczyles program nr 2.4 (punkt 2.4)\n");
+    }
+    return 0;
 
 /*************************************************************************************************
  Zadanie nr 2.5 (punkt 2.5)
