@@ -53,8 +53,8 @@ int main (void)
     float wynik3;
     float wynik4;
     
-    int zmienna, cyfra1, cyfra2, wynik, wyjscie=0;
-    char kontynuj;
+    int wyjscie=0;
+    char kont;
     
      
     /*************************************************************************************************
@@ -93,25 +93,22 @@ Zadanie nr 2.1 (punkt 2.1)
     printf ("\nZadanie nr 2.1 (punkt 2.1)\n");
     
     while(wyjscie1 == 0) {
-        printf ("Teraz bedzie program ktorym mozna nieskonczenie wiele raz wyswietlac wpisana liczbe\n");
+        printf ("\nTeraz bedzie program ktorym mozna nieskonczenie wiele razy wyswietlac wpisana liczbe\n");
         printf ("\nPamietaj ze po wpisaniu cyfry zero program zakonczy dzialanie\n");
         printf ("\nPamietaj aby zatwierdzic liczbe potwierdz klawiszem enter\n");
         printf ("\nPodaj liczbe ktora sie wyswietli: ");
         while(1)
         {
-            
-            
             scanf("%i", &w1);
-            
             if (w1 == 0)
             {
                 wyjscie1 = 1;
                 break;
-                
             }
             else
             {
-                printf("\nPodaj liczbe ktora sie wyswietli: ");
+                printf ("Twoja liczba to: %i \n", w1);
+                printf ("\nPodaj liczbe ktora sie wyswietli: ");
             }
         }
     printf ("\nZakonczyles program nr 2.1 (punkt 2.1)\n");
@@ -148,17 +145,17 @@ Zadanie nr 2.2 (punkt 2.2)
                 printf ("Nieznany operator\n");
                 break;
         }
-        puts ("Gratulacje !!! Wlasnie otrzymales wynik on=bliczenia matematycznego");
+        puts ("Gratulacje !!! Wlasnie otrzymales wynik obliczenia matematycznego");
         while(1)
         {
             printf("\nCzy chcesz wykonac kolejne obliczenie? Dla tak wpisz ''t'', dla nie wpisz ''n'': ");
-            kontynuj = getchar();
-            scanf("%c", &kontynuj);
-            if(kontynuj == 't')
+            getchar();
+            scanf("%c", &kont);
+            if(kont == 't')
             {
                 break;
             }
-            else if(kontynuj == 'n')
+            else if(kont == 'n')
             {
                 wyjscie = 1;
                 break;
