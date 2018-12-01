@@ -69,18 +69,17 @@ Zmienne dla zadania nr 3.4 (punkt 3.4)
 /*************************************************************************************************
 Zadanie nr 3.1 (punkt 3.1)
 *************************************************************************************************/
-
-void NewLine (char);
-void main()
-    {
-        char parametr1 =                                 ;
-        char wynik = newline(parametr1);
-        printf("%c", wynik);
-    }
-void newline(char)
-    {
-        return x + y;
-    }
+#include <stdio.h>
+int MojaFunkcja(int);
+int main()
+{
+    int wynik;
+    printf("\n", wynik);
+}
+int MojaFunkcja(int x)
+{
+    return x;
+}
 /*************************************************************************************************
 Zadanie nr 3.2 (punkt 3.2)
 *************************************************************************************************/
