@@ -80,6 +80,8 @@ int main (void)
      Zmienne dla zadania nr 2.6 (punkt 2.6)
      *************************************************************************************************/
     
+    int iwe;
+    iwe=0;
     
     /*************************************************************************************************
      Zmienne dla zadania nr 2.7 (punkt 2.7)
@@ -253,13 +255,25 @@ Zadanie nr 2.3 (punkt 2.3)
         printf ("\nKtora nie jest wieksza od zera\n");
         printf ("\nZakonczyles program nr 2.5 (punkt 2.5)\n");
     }
-    return 0;
+ 
 
 /*************************************************************************************************
  Zadanie nr 2.6 (punkt 2.6)
  *************************************************************************************************/
-
-
+    
+    printf ("\nZadanie nr 2.6 (punkt 2.6)\n");
+    printf ("\nProgram wyswietli liczby od zera do dziewieciu\n");
+    for (iwe=0 ; iwe <=9 ; )
+    {
+        printf ("%i\n", iwe);
+        iwe++;
+    }
+    printf ("\nWyswietlono liczby od zera do dziewieciu\n");
+    printf ("\nZakonczyles program nr 2.6 (punkt 2.6)\n");
+    
+    return 0;
+    
+    
 /*************************************************************************************************
  Zadanie nr 2.7 (punkt 2.7)
  *************************************************************************************************/
