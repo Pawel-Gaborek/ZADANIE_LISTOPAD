@@ -61,6 +61,8 @@ int main (void)
      Zmienne dla zadania nr 2.3 (punkt 2.3)
      *************************************************************************************************/
     
+    float xwr;
+    float mxj;
     
     /*************************************************************************************************
      Zmienne dla zadania nr 2.4 (punkt 2.4)
@@ -187,29 +189,21 @@ Zadanie nr 2.2 (punkt 2.2)
     
 /*************************************************************************************************
 Zadanie nr 2.3 (punkt 2.3)
-*************************************************************************************************
+**************************************************************************************************/
     
-    
-//while (liczba < 1000)
-        
-        {
-            printf ("Podaj podstawe potegi:\n");
-            scanf ("%f", &podstawa);
-            //printf ("Podaj potege:\n");
-            //scanf ("%d", &wykladnik);
-            
-            liczba=podstawa;
-            
-            for(i = 2; i <= wykladnik; i++)
-        
-                liczba=liczba*i;
-            printf ("Potega %f \n",liczba);
-        }
-        printf("Potega %f \n",liczba);
-   // }
-    return 0;
-}
-*/
+    printf ("\nZadanie nr 2.3 (punkt 2.3)\n");
+    printf ("\nProgram wyswietli kolejne potegi wprowadzonej liczby, przy czym potega nie moze byc wieksza niz 100 000\n");
+    printf("Podaj podstawe potegi: ");
+    scanf("%f", &xwr);
+    while (pow(xwr, mxj)<100000)
+    {
+        printf ("Liczba %f ", xwr);
+        printf ("do potegi %f wynosi: ", mxj);
+        printf ("%f\n", pow(xwr, mxj));
+        mxj++;
+    }
+    printf ("\nGratulacje, wlasnie otrzymals wynik\n");
+    printf ("\nZakonczyles program nr 2.3 (punkt 2.3)\n");
     
     
 /*************************************************************************************************
@@ -335,7 +329,7 @@ Zadanie nr 2.3 (punkt 2.3)
     
     for (xwm ; xwm <= xm ; )
     {
-        printf ("%i\n", xwm+3);
+        printf ("%i\n", xwm);
         xwm+=3;
     }
     printf ("\nWyswietlono co trzecia liczbe wieksza od %i a mniejsza od 100\n", xwm);
