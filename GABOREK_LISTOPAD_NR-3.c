@@ -70,13 +70,13 @@ Zmienne dla zadania nr 3.4 (punkt 3.4)
 Zadanie nr 3.1 (punkt 3.1)
 *************************************************************************************************/
 #include <stdio.h>
-int MojaFunkcja(int);
+int newline(int);
 int main()
 {
-    int wynik;
-    printf("\n", wynik);
+    int pustalinia;
+    printf("\n", pustalinia);
 }
-int MojaFunkcja(int x)
+int newline(int x)
 {
     return x;
 }
