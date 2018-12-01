@@ -93,6 +93,15 @@ int main (void)
      Zmienne dla zadania nr 2.8 (punkt 2.8)
      *************************************************************************************************/
     
+    int iwm, mm;
+    iwm=1;
+    
+    /*************************************************************************************************
+     Zmienne dla zadania nr 2.9 (punkt 2.9)
+     *************************************************************************************************/
+    
+    int xwm, xm;
+    xm=100;
     
 /*************************************************************************************************
 Zadanie nr 2.1 (punkt 2.1)
@@ -283,25 +292,57 @@ Zadanie nr 2.3 (punkt 2.3)
     printf ("\nPamietaj ze pierwsza liczba musi byc mniejsza od drugiej\n");
     printf ("\nPodaj pierwsza liczbe - poczatkowa zbioru\n");
     scanf ("%i", &iww);
-    printf ("\nPodaj liczbe liczbe - ostatnia ze zbioru\n");
+    printf ("\nPodaj druga liczbe - ostatnia ze zbioru\n");
     scanf ("%i", &mw);
     for (iww ; iww <=mw ; iww++)
     {
         printf ("%i\n", iww);
         
     }
-    printf ("\nWyswietlono liczby od zera do dziewieciu\n");
+    printf ("\nWyswietlono liczby od %i", iww);
+    printf ("do %i\n", mw);
     printf ("\nZakonczyles program nr 2.7 (punkt 2.7)\n");
-    
-    return 0;
     
     
 /*************************************************************************************************
  Zadanie nr 2.8 (punkt 2.8)
  *************************************************************************************************/
-
+    
+    printf ("\nZadanie nr 2.8 (punkt 2.8)\n");
+    printf ("\nProgram wyswietli liczby mniejsze od podanej liczby ale wieksze od zera\n");
+    printf ("\nPodaj liczbe: \n");
+    scanf ("%i", &mm);
+    for (iwm ; iwm < mm ; )
+    {
+        printf ("%i\n", mm-iwm);
+        iwm++;
+    }
+    printf ("\nWyswietlono liczby mniejsze od %i a wieksze od zera\n", mm);
+    printf ("\nZakonczyles program nr 2.8 (punkt 2.8)\n");
+    
+   
 
 /*************************************************************************************************
  Zadanie nr 2.9 (punkt 2.9)
  *************************************************************************************************/
+    
+    
+    
+    printf ("\nZadanie nr 2.9 (punkt 2.9)\n");
+    printf ("\nProgram wyswietli co trzecia liczbe wieksza od podanej a mniejsza od 100\n");
+    printf ("\nPodaj liczbe: \n");
+    scanf ("%i", &xwm);
+    
+    for (xwm ; xwm <= xm ; )
+    {
+        printf ("%i\n", xwm+3);
+        xwm+=3;
+    }
+    printf ("\nWyswietlono co trzecia liczbe wieksza od %i a mniejsza od 100\n", xwm);
+    printf ("\nZakonczyles program nr 2.9 (punkt 2.9)\n");
+    
+    return 0;
+    
 }
+
+
