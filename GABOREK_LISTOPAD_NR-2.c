@@ -87,6 +87,7 @@ int main (void)
      Zmienne dla zadania nr 2.7 (punkt 2.7)
      *************************************************************************************************/
     
+    int iww, mw;
     
     /*************************************************************************************************
      Zmienne dla zadania nr 2.8 (punkt 2.8)
@@ -271,14 +272,30 @@ Zadanie nr 2.3 (punkt 2.3)
     printf ("\nWyswietlono liczby od zera do dziewieciu\n");
     printf ("\nZakonczyles program nr 2.6 (punkt 2.6)\n");
     
-    return 0;
-    
     
 /*************************************************************************************************
  Zadanie nr 2.7 (punkt 2.7)
  *************************************************************************************************/
 
 
+    printf ("\nZadanie nr 2.7 (punkt 2.7)\n");
+    printf ("\nProgram wyswietli liczby ze zbioru dwóch podanych przez Ciebie liczb\n");
+    printf ("\nPamietaj ze pierwsza liczba musi byc mniejsza od drugiej\n");
+    printf ("\nPodaj pierwsza liczbe - poczatkowa zbioru\n");
+    scanf ("%i", &iww);
+    printf ("\nPodaj liczbe liczbe - ostatnia ze zbioru\n");
+    scanf ("%i", &mw);
+    for (iww ; iww <=mw ; iww++)
+    {
+        printf ("%i\n", iww);
+        
+    }
+    printf ("\nWyswietlono liczby od zera do dziewieciu\n");
+    printf ("\nZakonczyles program nr 2.7 (punkt 2.7)\n");
+    
+    return 0;
+    
+    
 /*************************************************************************************************
  Zadanie nr 2.8 (punkt 2.8)
  *************************************************************************************************/
