@@ -204,26 +204,28 @@ Zadanie nr 2.3 (punkt 2.3)
  Zadanie nr 2.4 (punkt 2.4)
  *************************************************************************************************/
 
-    printf ("\nZadanie nr 2.4 (punkt 2.4)\n");
-    printf ("\nWprowadz liczbe celem porownania wzgledem zera\n");
-    printf ("\nPAMIETAJ !!!\n");
-    printf ("\nJezeli podana liczba jest mniejsza od zera to program zakonczy dzialanie\n");
-    scanf("\n%i", &mm2);
-    if (mm2 > 0)
     {
-        while (aa2 <= mm2)
+        printf ("\nZadanie nr 2.4 (punkt 2.4)\n");
+        printf ("\nWprowadz liczbe celem porownania wzgledem zera\n");
+        printf ("\nPAMIETAJ !!!\n");
+        printf ("\nJezeli podana liczba jest mniejsza od zera to program zakonczy dzialanie\n");
+        printf ("\nProgram wyswietli liczby od najwiekszej do najmniejszej\n");
+        scanf("\n%i", &mm2);
+        if (mm2 > 0)
         {
-            printf ("%i\n", aa2-1);
-            ++aa2;
+            while (aa2 <= mm2)
+            {
+                printf ("%i\n", mm2-aa2);
+                ++aa2;
+            }
+        }
+        else
+        {
+            printf ("Niestety podales liczbe: %i\n", mm2);
+            printf ("\nKtora nie jest wieksza od zera\n");
+            printf ("\nZakonczyles program nr 2.4 (punkt 2.4)\n");
         }
     }
-    else
-    {
-        printf ("Niestety podales liczbe: %i\n", mm2);
-        printf ("\nKtora nie jest wieksza od zera\n");
-        printf ("\nZakonczyles program nr 2.4 (punkt 2.4)\n");
-    }
-
 /*************************************************************************************************
  Zadanie nr 2.5 (punkt 2.5)
  *************************************************************************************************/
@@ -235,12 +237,13 @@ Zadanie nr 2.3 (punkt 2.3)
     printf ("\nWprowadz liczbe celem porownania wzgledem zera\n");
     printf ("\nPAMIETAJ !!!\n");
     printf ("\nJezeli podana liczba jest mniejsza od zera to program zakonczy dzialanie\n");
+    printf ("\nProgram wyswietli liczby od najwiekszej do najmniejszej - tylko parzyste\n");
     scanf("\n%i", &mm3);
     if (mm3 > 0)
     {
         while (aa3 <= mm3)
         {
-            printf ("%i\n", aa3-1);
+            printf ("%i\n", mm3-aa3);
             aa3+=2;
         }
     }
