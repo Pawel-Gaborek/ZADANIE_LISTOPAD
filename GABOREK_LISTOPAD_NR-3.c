@@ -70,27 +70,75 @@ Zmienne dla zadania nr 3.4 (punkt 3.4)
 Zadanie nr 3.1 (punkt 3.1)
 *************************************************************************************************/
 #include <stdio.h>
-int newline(int);
-int main()
-{
-    int pustalinia;
-    printf("\n", pustalinia);
+
+/*
+int newline (int pustalinia)               // nadałem nazwę funkcji pomocniczej typ zmienej i nazwę argumentu
+{                                          // rozpoczyna się ciało funkcji
+    pustalinia="\n";            // instrukcjie
+    return "\n";                     // program ma zwrócić pusta linie, argumet
 }
-int newline(int x)
+void main()                                // głowna funkcja
 {
-    return x;
+    int i=1;
+    wynik = newline (pustalinia)   // Przywolanie funkcji poprzez STOS z wartoscia argumentu 1
 }
+*/
+
 /*************************************************************************************************
 Zadanie nr 3.2 (punkt 3.2)
 *************************************************************************************************/
 
+/*
 
+int NewLines (int count)                   // Argumentem jest "count" oraz "i", nazwa funkcji "newlines"
+{
+    int i;                                 // Definiuje ztyp miennej lokalnej dla początku pętli
+    for (i=0; i < count; i++)              // ciało fuknkcji
+        printf ("\n");                     // Wynik funkcji
+    return count;                          // Zwraca rezultat
+}
 
+void main ()                               // Glowna funkcja kodu
+{
+    int count;
+    printf ("Uruchomiles wlasnie kolejny program, zadanie nr 3.2\n");
+    printf ("Podaj wartosc parametru ''count'', uzytego w funkcji ''NewLines''\n");
+    printf ("W wyniku tego podana wartosc zostanie przeslana poprzez ''STOS'' do funkcji i otrzymasz wynik\n");
+    printf ("Twoja wartosc dla parametru ''count'' to: \n");
+    scanf ("%i", &count);
+    int wynik = NewLines(count);
+    printf ("Wlasnie zakonczyles dzialanie programu nr 3.2\n");
+    printf ("Rezultatem dzialania programu bylo wyrzucenie i% pustych linijek", count);
+    printf ("%i", &count);
+    printf ("pustych linijek\n", count);
+}
+*/
 
 /*************************************************************************************************
 Zadanie nr 3.3 (punkt 3.3)
 *************************************************************************************************/
 
+int WriteBiggerNumber (int qwe, zxc)      // Argumentem jest "count" oraz "i", nazwa funkcji
+{
+    scanf ("%i %i", qwe zxc);
+    if (qwe>zxc)
+        printf ( "Zmienna ''x'' jest  wieksza od ''y''\n");
+    if (qwe<zxc)
+        printf ( "Zmienna ''y'' jest  wieksza od ''x''\n");
+    return zxc;
+}
+
+void main ()                               // Glowna funkcja kodu
+{
+    int a, b;
+    int rezultat;
+    printf ("Uruchomiles wlasnie kolejny program, zadanie nr 3.3\n");
+    printf ("Podaj wartosc parametru ''xt'' oraz ''y'', uzytego w funkcji ''WriteBigNum''\n");
+    printf ("W wyniku tego podana wartosc zostanie przeslana poprzez ''STOS'' do funkcji i otrzymasz wynik\n");
+    printf ("Twoja wartosc dla parametru ''x'' oraz ''y'' to: \n");
+    rezultat = WriteBiggerNumber(a, b);
+    printf ("Wlasnie zakonczyles dzialanie programu nr 3.3\n");
+}
 
 
 
