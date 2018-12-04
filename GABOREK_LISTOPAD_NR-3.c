@@ -36,59 +36,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
-
-
-    
 /*************************************************************************************************
-Zmienne dla zadania nr 3.1 (punkt 3.1)
+Funkcja dla zadania nr 3.1 (punkt 3.1), poniżej zdefiniowałem pierwsza funkcje do ktorej pozniej
+sie odwolam poprzez STOS w funkcji main.
 *************************************************************************************************/
 
-
-
-/*************************************************************************************************
-Zmienne dla zadania nr 3.2 (punkt 3.2)
-*************************************************************************************************/
-
-
-    
-/*************************************************************************************************
-Zmienne dla zadania nr 3.3 (punkt 3.3)
-*************************************************************************************************/
-
-    
-    
-/*************************************************************************************************
-Zmienne dla zadania nr 3.4 (punkt 3.4)
-*************************************************************************************************/
-
-    
-    
-    
-/*************************************************************************************************
-Zadanie nr 3.1 (punkt 3.1)
-*************************************************************************************************/
-#include <stdio.h>
-
-/*
 int newline (int pustalinia)               // nadałem nazwę funkcji pomocniczej typ zmienej i nazwę argumentu
 {                                          // rozpoczyna się ciało funkcji
     pustalinia="\n";            // instrukcjie
     return "\n";                     // program ma zwrócić pusta linie, argumet
 }
-void main()                                // głowna funkcja
-{
-    int i=1;
-    wynik = newline (pustalinia)   // Przywolanie funkcji poprzez STOS z wartoscia argumentu 1
-}
-*/
 
 /*************************************************************************************************
-Zadanie nr 3.2 (punkt 3.2)
+Funkcja dla zadania nr 3.2 (punkt 3.2), poniżej zdefiniowałem druga funkcje do ktorej pozniej
+sie odwolam poprzez STOS w funkcji main.
 *************************************************************************************************/
-
-/*
 
 int NewLines (int count)                   // Argumentem jest "count" oraz "i", nazwa funkcji "newlines"
 {
@@ -97,6 +59,102 @@ int NewLines (int count)                   // Argumentem jest "count" oraz "i", 
         printf ("\n");                     // Wynik funkcji
     return count;                          // Zwraca rezultat
 }
+    
+/*************************************************************************************************
+Funkcja dla zadania nr 3.3 (punkt 3.3), poniżej zdefiniowałem trzecia funkcje do ktorej pozniej
+sie odwolam poprzez STOS w funkcji main.
+*************************************************************************************************/
+
+int WriteBiggerNumber (int qwe)      // Argumentem jest "count" oraz "i", nazwa funkcji
+{
+    int a, b;
+    scanf ("%i", &a);
+    scanf ("%i", &b);
+    if (a>b)
+        printf ( "Zmienna ''x'' jest  wieksza od ''y''\n");
+    if (a<b)
+        printf ( "Zmienna ''y'' jest  wieksza od ''x''\n");
+    return qwe;
+}
+    
+/*************************************************************************************************
+ Funkcja dla zadania nr 3.4 (punkt 3.4), poniżej zdefiniowałem pierwsza funkcje do ktorej pozniej
+ sie odwolam poprzez STOS w funkcji main.
+*************************************************************************************************/
+
+
+
+/*************************************************************************************************
+Zadanie nr 3.1 (punkt 3.1). Ropoczynam glowna funkcje main.
+*************************************************************************************************/
+
+int main(void)
+{
+    char kont;                                      // definiuje zmienna globalna dla "tak" lub "nie"
+    int count;
+    printf ("Teraz zostanie uruchmiony zadanie nr 3.1\n");
+    {
+        printf("\nCzy chcesz uruchomic zadanie nr 3.1? Dla tak wpisz ''t'', dla nie wpisz ''n'': ");
+        printf("\nPrzy wyborze ''n'' przejdziesz do kolejnego zadania nr 3.2\n");
+        getchar();
+        scanf("%c", &kont);
+        if(kont == 't')
+        {
+            printf("Podales bledna litere!\n");
+        }
+        else if(kont == 'n')
+        {
+            printf("Szkoda, ze nie chciales uruchomic programu. Powodzenia\n");
+            printf("Wlasnie zakonczyles dzialanie programu nr 3.1\n");
+        }
+        else
+        {
+            printf("Podales bledna litere!\n");
+        }
+    }
+    printf ("\nZakonczyles program nr 3.1 (punkt 3.1)\n");
+    printf ("\n");
+    
+/*************************************************************************************************
+Zadanie nr 3.2 (punkt 3.2)
+*************************************************************************************************/
+
+    printf ("Teraz zostanie uruchmione zadanie nr 3.2\n)");
+    {
+        printf("\nCzy chcesz uruchomic zadanie nr 3.2? Dla tak wpisz ''t'', dla nie wpisz ''n'': ");
+        printf("\nPrzy wyborze ''n'' przejdziesz do kolejnego zadania nr 3.3\n");
+        getchar();
+        scanf("%c", &kont);
+        if (kont == 't')
+        {
+            printf ("Uruchomiles wlasnie kolejny program, zadanie nr 3.2\n");
+            printf ("Podaj wartosc parametru ''count'', uzytego w funkcji ''NewLines''\n");
+            printf ("W wyniku tego podana wartosc zostanie przeslana poprzez ''STOS'' do funkcji i otrzymasz wynik\n");
+            printf ("Twoja wartosc dla parametru ''count'' to: \n");
+            scanf ("%i", &count);
+            int wynik = NewLines(count);
+            printf ("Wlasnie zakonczyles dzialanie programu nr 3.2\n");
+            printf ("Rezultatem dzialania programu bylo wyrzucenie i% pustych linijek", count);
+            printf ("%i", &count);
+            printf ("pustych linijek\n", count);
+        }
+        else if (kont == 'n')
+        {
+            printf("Szkoda, ze nie chciales uruchomic programu. Powodzenia\n");
+            printf("Wlasnie zakonczyles dzialanie programu nr 3.1\n");
+        }
+        else
+        {
+            printf("Podales bledna litere!\n");
+        }
+    }
+    printf ("\nZakonczyles program nr 3.2 (punkt 3.2)\n");
+    printf ("\n");
+}
+    
+/*
+
+
 
 void main ()                               // Glowna funkcja kodu
 {
@@ -118,25 +176,16 @@ void main ()                               // Glowna funkcja kodu
 Zadanie nr 3.3 (punkt 3.3)
 *************************************************************************************************/
 
-int WriteBiggerNumber (int qwe, zxc)      // Argumentem jest "count" oraz "i", nazwa funkcji
-{
-    scanf ("%i %i", qwe zxc);
-    if (qwe>zxc)
-        printf ( "Zmienna ''x'' jest  wieksza od ''y''\n");
-    if (qwe<zxc)
-        printf ( "Zmienna ''y'' jest  wieksza od ''x''\n");
-    return zxc;
-}
 
+/*
 void main ()                               // Glowna funkcja kodu
 {
-    int a, b;
     int rezultat;
     printf ("Uruchomiles wlasnie kolejny program, zadanie nr 3.3\n");
     printf ("Podaj wartosc parametru ''xt'' oraz ''y'', uzytego w funkcji ''WriteBigNum''\n");
     printf ("W wyniku tego podana wartosc zostanie przeslana poprzez ''STOS'' do funkcji i otrzymasz wynik\n");
     printf ("Twoja wartosc dla parametru ''x'' oraz ''y'' to: \n");
-    rezultat = WriteBiggerNumber(a, b);
+    rezultat = WriteBiggerNumber;
     printf ("Wlasnie zakonczyles dzialanie programu nr 3.3\n");
 }
 
