@@ -41,11 +41,12 @@
  sie odwolam poprzez STOS w funkcji main.
  *************************************************************************************************/
 
-int newline (char pustalinia)               // podalem nazwe mojej funkcji typ zmiennej i nazwe
-{                                          // rozpoczyna się ciało funkcji
-    char wdf;
-    wdf = printf ("/n");
-    return pustalinia;                 // program ma zwrócić pusta linie
+int newline (int pustalinia)               // podalem nazwe mojej funkcji typ zmiennej i nazwe
+{
+    int j;                               // rozpoczyna się ciało funkcji
+    for (j=0; j<pustalinia; j++)
+        printf ("\n");
+    return pustalinia;                     // program ma zwrócić pusta linie
 }                                          // koniec ciala funkcji
 
 /*************************************************************************************************
@@ -83,7 +84,7 @@ int WriteBiggerNumber (int a, int b)       // podaje nazwe mojej funkcji, oraz t
 int Multiply(int xer, int yui)             // nadalem nazwe funkcji, typy i nazwy zmiennych
 {                                          // poczatek ciala funkcji
     int m;                                 // instrukcja
-    m=xer * yui;                             // instrukcja
+    m=xer * yui;                           // instrukcja
     return m;                              // instrukcja
 }                                          // koniec ciala funkcji
 
@@ -95,22 +96,18 @@ int main(void)
 {
     
     // ponizej ogreslilem wszystkie zmienne globalne a takze na dalem im typ zmiennej
-    int count;
-    int wybor;
-    int wmw;
-    int wynik31;
-    int wynik32;
-    int wynik33;
-    int wynik34;
-    char pustalinia;
-    char mmm;
+    int wybor;                      // zmienna dla switch, wybor podprogramu
+    int wmw;                        // zmienna dla 3.2
+    int wynik31;                    // zmienna dla 3.1
+    int wynik32;                    // zmienna dla 3.2
+    int wynik33;                    // zmienna dla 3.3
+    int wynik34;                    // zmienna dla 3.4
+    int mmm=1;                      // zmienna dla 3.1
     
-    int wyjscie=0;
-    char kont;
-    int rezultat;               // zmienna dla 3.3
+    int wyjscie=0;                  // zmienna dla wyjscia z programu
+    char kont;                      // zmienna dla wyjscia z programu
     int aaa, bbb;                   // zmienna dla 3.3
-    int w, m;
-    int x, y;
+    int x, y;                       // zmienna dla 3.4
     printf ("\nWlasnie uruchomiles program nr 3\n");
     printf ("Glowna funkcje main\n");
     
@@ -128,8 +125,9 @@ int main(void)
         {
             case 1:
                 // rozpoczynam program nr 3.1
-                //int wynik31 = newline;
-                printf ("Rezultat to pusta linia &c: ", wynik31);
+                mmm=1;
+                int wynik31 = newline(mmm);
+                printf ("Rezultat to pusta linia, widoczna powyzej");
                 break;
             case 2:
                 // rozpoczynam program nr 3.2
@@ -139,10 +137,10 @@ int main(void)
                 printf ("Twoja wartosc dla parametru ''count'' to: \n");
                 scanf ("%i", &wmw);
                 int wynik32 = NewLines(wmw);
-                printf ("Rezultatem dzialania programu bylo wyrzucenie i% pustych linijek", count);
-                printf ("%i", &wmw);
-                printf ("pustych linijek\n", wmw);
-                printf ("Wlasnie zakonczyles dzialanie programu nr 3.2\n");
+                printf ("Rezultatem dzialania programu bylo wyrzucenie ");
+                printf ("%i", wmw);
+                printf (" pustych linijek\n");
+                printf ("Wlasnie zakonczyle2s dzialanie programu nr 3.2\n");
                 break;
             case 3:
                 // rozpoczynam program nr 3.3
@@ -160,7 +158,7 @@ int main(void)
             case 4:
                 // rozpoczynam program nr 3.4
                 printf ("Uruchomiles wlasnie kolejny program, zadanie nr 3.4\n");
-                printf ("W tym programie otrzymasz wynik mnizenia dwoch liczb\n");
+                printf ("W tym programie otrzymasz wynik mnozenia dwoch liczb\n");
                 printf ("W wyniku tego pobrana wartosc zostanie przeslana poprzez ''STOS'' do funkcji i otrzymasz wynik\n");
                 printf ("Twoja wartosc dla parametru ''x'' to: \n");
                 scanf ("%i", &x);
@@ -171,7 +169,8 @@ int main(void)
                 printf ("\nWlasnie zakonczyles dzialanie programu nr 3.2\n");
                 break;
             default:
-                printf ("Nieznany operator\n");
+                printf ("Podales bledna liczbe\n");
+                printf ("Nic sie nie stalo. Przejdziesz do kolejnego pola wyboru :)\n");
                 break;
                 // teraz przechodze do mozliwosci wyboru czy chce ponownie uruchomic ktoras czesc programu (podprogramy)
                 // czy zakonczyc calkiem dzialanie programu
